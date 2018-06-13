@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Reena | Profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body {
+        font: 400 15px Lato, sans-serif;
+        line-height: 1.8;
+        color: #818181;
+        background-color: #f1f1f1;
+      }
+
+      h2 {
+        font-size: 24px;
+        text-transform: uppercase;
+        color: rgb(0, 139, 139);
+        font-weight: 600;
+        margin-bottom: 30px;
+      }
+
+      .jumbotron h1 {
+        color: rgb(0, 139, 139);
+      }
+
+      h4 {
+        font-size: 19px;
+        line-height: 1.375em;
+        color: #303030;
+        font-weight: 400;
+        margin-bottom: 30px;
+      }
+
+      footer {
+        color: #fff;
+        background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+        background-size: 400% 400%;
+        -webkit-animation: Gradient 15s ease infinite;
+        -moz-animation: Gradient 15s ease infinite;
+        animation: Gradient 15s ease infinite;
+      }
+
+      footer p {
+        color: white;
+      }
+
+      .jumbotron {
+        background-color: rgb(102, 205, 170);
+        color: #fff;
+        padding: 100px 25px;
+        font-family: Montserrat, sans-serif;
+      }
+
+      .jumbotron p {
+        font-size: 14px;
+      }
+
+      .container-fluid {
+        padding: 60px 50px;
+      }
+
+      .bg-grey {
+        background-color: #f6f6f6;
+      }
+
+      .logo-small {
+        color: rgb(47, 79, 79);
+        font-size: 50px;
+      }
+
+      .logo {
+        color: #f4511e;
+        font-size: 200px;
+      }
+
+      .thumbnail {
+        padding: 0 0 15px 0;
+        border: none;
+        border-radius: 0;
+      }
+
+      .thumbnail img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+      }
+
+      .carousel-control.right,
+      .carousel-control.left {
+        background-image: none;
+        color: #f4511e;
+      }
+
+      .carousel-indicators li {
+        border-color: #f4511e;
+      }
+
+      .carousel-indicators li.active {
+        background-color: #f4511e;
+      }
+
+      .item h4 {
+        font-size: 19px;
+        line-height: 1.375em;
+        font-weight: 400;
+        font-style: italic;
+        margin: 70px 0;
+      }
+
+      .item span {
+        font-style: normal;
+      }
+
+      .panel {
+        border: 1px solid #f4511e;
+        border-radius: 0 !important;
+        transition: box-shadow 0.5s;
+      }
+
+      .panel:hover {
+        box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+      }
+
+      .panel-footer .btn:hover {
+        border: 1px solid #f4511e;
+        background-color: #fff !important;
+        color: #f4511e;
+      }
+
+      .panel-heading {
+        color: #fff !important;
+        background-color: #f4511e !important;
+        padding: 25px;
+        border-bottom: 1px solid transparent;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+
+      .panel-footer {
+        background-color: white !important;
+      }
+
+      .panel-footer h3 {
+        font-size: 32px;
+      }
+
+      .panel-footer h4 {
+        color: #aaa;
+        font-size: 14px;
+      }
+
+      .panel-footer .btn {
+        margin: 15px 0;
+        background-color: #f4511e;
+        color: #fff;
+      }
+
+      .navbar {
+        margin-bottom: 0;
+        background-color: rgb(102, 205, 170);
+        z-index: 9999;
+        border: 0;
+        font-size: 12px !important;
+        line-height: 1.42857143 !important;
+        letter-spacing: 4px;
+        border-radius: 0;
+        font-family: Montserrat, sans-serif;
+      }
+
+      .navbar li a,
+      .navbar .navbar-brand {
+        color: #fff !important;
+      }
+
+      .navbar-nav li a:hover,
+      .navbar-nav li.active a {
+        color: rgb(47, 79, 79) !important;
+        background-color: #fff !important;
+      }
+
+      .navbar-default .navbar-toggle {
+        border-color: transparent;
+        color: #fff !important;
+      }
+
+      .white {
+        background-color: white;
+        padding: 40px;
+      }
+
+      .lblue {
+        color: rgb(102, 205, 170);
+      }
+
+      .slideanim {
+        visibility: hidden;
+      }
+
+      .slide {
+        animation-name: slide;
+        -webkit-animation-name: slide;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        visibility: visible;
+      }
+
+      @keyframes slide {
+        0% {
+          opacity: 0;
+          transform: translateY(70%);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateY(0%);
+        }
+      }
+
+      @-webkit-keyframes slide {
+        0% {
+          opacity: 0;
+          -webkit-transform: translateY(70%);
+        }
+
+        100% {
+          opacity: 1;
+          -webkit-transform: translateY(0%);
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .col-sm-4 {
+          text-align: center;
+          margin: 25px 0;
+        }
+
+        .btn-lg {
+          width: 100%;
+          margin-bottom: 35px;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .logo {
+          font-size: 150px;
+        }
+      }
+
+      @media (min-width: 100px) and (max-width: 400px) {
+        .content {
+          max-width: 300px;
+        }
+
+        .aboutme h1 {
+          font-size: 28px;
+        }
+      }
+
+      /* main header section */
+      .section {
+        text-align: center;
+        color: white;
+      }
+
+      .opaque-bg {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 380px;
+        padding: 1px 1px 5px 5px;
+      }
+
+      .aboutme {
+        background-size: cover;
+      }
+
+      .aboutme p {
+        color: white;
+        font-weight: 100;
+        font-size: 17.4px;
+      }
+
+      .social-links a {
+        color: white;
+        padding: 0px 5px 0px 5px;
+      }
+
+      /* New Timeline style */
+      .vertical-container {
+        width: 90%;
+        max-width: 1170px;
+        margin: 0 auto;
+      }
+
+      .vertical-container::after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+
+      #vertical-timeline {
+        position: relative;
+        padding: 0;
+        margin-top: 2em;
+        margin-bottom: 2em;
+      }
+
+      #vertical-timeline::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 18px;
+        height: 100%;
+        width: 4px;
+        background: #f1f1f1;
+      }
+
+      .vertical-timeline-content .btn {
+        float: right;
+      }
+
+      #vertical-timeline.light-timeline:before {
+        background: #acacaf;
+      }
+
+      .dark-timeline .vertical-timeline-content:before {
+        border-color: transparent #f5f5f5 transparent transparent;
+      }
+
+      .dark-timeline.center-orientation .vertical-timeline-content:before {
+        border-color: transparent transparent transparent #f5f5f5;
+      }
+
+      .dark-timeline .vertical-timeline-block:nth-child(2n) .vertical-timeline-content:before,
+      .dark-timeline.center-orientation .vertical-timeline-block:nth-child(2n) .vertical-timeline-content:before {
+        border-color: transparent #f5f5f5 transparent transparent;
+      }
+
+      .dark-timeline .vertical-timeline-content,
+      .dark-timeline.center-orientation .vertical-timeline-content {
+        background: #f5f5f5;
+      }
+
+      @media only screen and (min-width: 1170px) {
+        #vertical-timeline.center-orientation {
+          margin-top: 3em;
+          margin-bottom: 3em;
+        }
+
+        #vertical-timeline.center-orientation:before {
+          left: 50%;
+          margin-left: -2px;
+        }
+      }
+
+      @media only screen and (max-width: 1170px) {
+        .center-orientation.dark-timeline .vertical-timeline-content:before {
+          border-color: transparent #f5f5f5 transparent transparent;
+        }
+      }
+
+      .vertical-timeline-block {
+        position: relative;
+        margin: 2em 0;
+      }
+
+      .vertical-timeline-block:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .vertical-timeline-block:first-child {
+        margin-top: 0;
+      }
+
+      .vertical-timeline-block:last-child {
+        margin-bottom: 0;
+      }
+
+      @media only screen and (min-width: 1170px) {
+        .center-orientation .vertical-timeline-block {
+          margin: 4em 0;
+        }
+
+        .center-orientation .vertical-timeline-block:first-child {
+          margin-top: 0;
+        }
+
+        .center-orientation .vertical-timeline-block:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .vertical-timeline-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 16px;
+        border: 3px solid #f1f1f1;
+        text-align: center;
+      }
+
+      .vertical-timeline-icon i {
+        display: block;
+        width: 24px;
+        height: 24px;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        margin-left: -12px;
+        margin-top: -9px;
+      }
+
+      @media only screen and (min-width: 1170px) {
+        .center-orientation .vertical-timeline-icon {
+          width: 50px;
+          height: 50px;
+          left: 50%;
+          margin-left: -25px;
+          -webkit-transform: translateZ(0);
+          -webkit-backface-visibility: hidden;
+          font-size: 19px;
+        }
+
+        .center-orientation .vertical-timeline-icon i {
+          margin-left: -12px;
+          margin-top: -10px;
+        }
+
+        .center-orientation .cssanimations .vertical-timeline-icon.is-hidden {
+          visibility: hidden;
+        }
+      }
+
+      .vertical-timeline-content {
+        position: relative;
+        margin-left: 60px;
+        background: white;
+        border-radius: 0.25em;
+        padding: 1em;
+      }
+
+      .vertical-timeline-content:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .vertical-timeline-content h2 {
+        font-weight: 400;
+        margin-top: 4px;
+      }
+
+      .vertical-timeline-content p {
+        margin: 1em 0;
+        line-height: 1.6;
+      }
+
+      .vertical-timeline-content .vertical-date {
+        float: left;
+        font-weight: 500;
+      }
+
+      .vertical-date small {
+        color: #1ab394;
+        font-weight: 400;
+      }
+
+      .vertical-timeline-content::before {
+        content: '';
+        position: absolute;
+        top: 16px;
+        right: 100%;
+        height: 0;
+        width: 0;
+        border: 7px solid transparent;
+        border-right: 7px solid white;
+      }
+
+      @media only screen and (min-width: 768px) {
+        .vertical-timeline-content h2 {
+          font-size: 18px;
+        }
+
+        .vertical-timeline-content p {
+          font-size: 13px;
+        }
+      }
+
+      @media only screen and (min-width: 1170px) {
+        .center-orientation .vertical-timeline-content {
+          margin-left: 0;
+          padding: 1.6em;
+          width: 45%;
+        }
+
+        .center-orientation .vertical-timeline-content::before {
+          top: 24px;
+          left: 100%;
+          border-color: transparent;
+          border-left-color: white;
+        }
+
+        .center-orientation .vertical-timeline-content .btn {
+          float: left;
+        }
+
+        .center-orientation .vertical-timeline-content .vertical-date {
+          position: absolute;
+          width: 100%;
+          left: 122%;
+          top: 2px;
+          font-size: 14px;
+        }
+
+        .center-orientation .vertical-timeline-block:nth-child(even) .vertical-timeline-content {
+          float: right;
+        }
+
+        .center-orientation .vertical-timeline-block:nth-child(even) .vertical-timeline-content::before {
+          top: 24px;
+          left: auto;
+          right: 100%;
+          border-color: transparent;
+          border-right-color: white;
+        }
+
+        .center-orientation .vertical-timeline-block:nth-child(even) .vertical-timeline-content .btn {
+          float: right;
+        }
+
+        .center-orientation .vertical-timeline-block:nth-child(even) .vertical-timeline-content .vertical-date {
+          left: auto;
+          right: 122%;
+          text-align: right;
+        }
+
+        .center-orientation .cssanimations .vertical-timeline-content.is-hidden {
+          visibility: hidden;
+        }
+      }
+
+      /* BACKGROUNDS */
+      .gray-bg {
+        background-color: #f3f3f4;
+      }
+
+      .white-bg {
+        background-color: #ffffff;
+      }
+
+      .navy-bg {
+        background-color: #1ab394;
+        color: #ffffff;
+      }
+
+      .blue-bg {
+        background-color: #1c84c6;
+        color: #ffffff;
+      }
+
+      .lazur-bg {
+        background-color: #23c6c8;
+        color: #ffffff;
+      }
+
+      .yellow-bg {
+        background-color: #f8ac59;
+        color: #ffffff;
+      }
+
+      .red-bg {
+        background-color: #ed5565;
+        color: #ffffff;
+      }
+
+      .black-bg {
+        background-color: #262626;
+      }
+
+      .panel-primary {
+        border-color: #1ab394;
+      }
+
+      .panel-primary>.panel-heading {
+        background-color: #1ab394;
+        border-color: #1ab394;
+      }
+
+      .panel-success {
+        border-color: #1c84c6;
+      }
+
+      .panel-success>.panel-heading {
+        background-color: #1c84c6;
+        border-color: #1c84c6;
+        color: #ffffff;
+      }
+
+      .panel-info {
+        border-color: #23c6c8;
+      }
+
+      .panel-info>.panel-heading {
+        background-color: #23c6c8;
+        border-color: #23c6c8;
+        color: #ffffff;
+      }
+
+      .panel-warning {
+        border-color: #f8ac59;
+      }
+
+      .panel-warning>.panel-heading {
+        background-color: #f8ac59;
+        border-color: #f8ac59;
+        color: #ffffff;
+      }
+
+      .panel-danger {
+        border-color: #ed5565;
+      }
+
+      .panel-danger>.panel-heading {
+        background-color: #ed5565;
+        border-color: #ed5565;
+        color: #ffffff;
+      }
+
+      .progress-bar {
+        background-color: #1ab394;
+      }
+
+      .progress-small,
+      .progress-small .progress-bar {
+        height: 10px;
+      }
+
+      .progress-small,
+      .progress-mini {
+        margin-top: 5px;
+      }
+
+      .progress-mini,
+      .progress-mini .progress-bar {
+        height: 5px;
+        margin-bottom: 0;
+      }
+
+      .progress-bar-navy-light {
+        background-color: #3dc7ab;
+      }
+
+      .progress-bar-success {
+        background-color: #1c84c6;
+      }
+
+      .progress-bar-info {
+        background-color: #23c6c8;
+      }
+
+      .progress-bar-warning {
+        background-color: #f8ac59;
+      }
+
+      .progress-bar-danger {
+        background-color: #ed5565;
+      }
+
+      .panel-title {
+        font-size: inherit;
+      }
+
+      .jumbotron {
+        border-radius: 6px;
+        padding: 40px;
+      }
+
+      .jumbotron h1 {
+        color: #fff;
+        margin-top: 0;
+      }
+
+      /* COLORS */
+      .text-navy {
+        color: #1ab394;
+      }
+
+      .text-primary {
+        color: inherit;
+      }
+
+      .text-success {
+        color: #1c84c6;
+      }
+
+      .text-info {
+        color: #23c6c8;
+      }
+
+      .text-warning {
+        color: #f8ac59;
+      }
+
+      .text-danger {
+        color: #ed5565;
+      }
+
+      .text-muted {
+        color: #888888;
+      }
+
+      .text-white {
+        color: #ffffff;
+      }
+
+      .simple_tag {
+        background-color: #f3f3f4;
+        border: 1px solid #e7eaec;
+        border-radius: 2px;
+        color: inherit;
+        font-size: 10px;
+        margin-right: 5px;
+        margin-top: 5px;
+        padding: 5px 12px;
+        display: inline-block;
+      }
+
+      .img-shadow {
+        -webkit-box-shadow: 0 0 3px 0 #919191;
+        -moz-box-shadow: 0 0 3px 0 #919191;
+        box-shadow: 0 0 3px 0 #919191;
+      }
+
+      /* For handle diferent bg color in AngularJS version */
+      .dashboards\.dashboard_2 nav.navbar,
+      .dashboards\.dashboard_3 nav.navbar,
+      .mailbox\.inbox nav.navbar,
+      .mailbox\.email_view nav.navbar,
+      .mailbox\.email_compose nav.navbar,
+      .dashboards\.dashboard_4_1 nav.navbar,
+      .metrics nav.navbar,
+      .metrics\.index nav.navbar,
+      .dashboards\.dashboard_5 nav.navbar {
+        background: #fff;
+      }
+
+      /* For handle diferent bg color in MVC version */
+      .Dashboard_2 .navbar.navbar-static-top,
+      .Dashboard_3 .navbar.navbar-static-top,
+      .Dashboard_4_1 .navbar.navbar-static-top,
+      .ComposeEmail .navbar.navbar-static-top,
+      .EmailView .navbar.navbar-static-top,
+      .Inbox .navbar.navbar-static-top,
+      .Metrics .navbar.navbar-static-top,
+      .Dashboard_5 .navbar.navbar-static-top {
+        background: #fff;
+      }
+
+      a.close-canvas-menu {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        z-index: 1011;
+        color: #a7b1c2;
+      }
+
+      a.close-canvas-menu:hover {
+        color: #fff;
+      }
+
+      .close-canvas-menu {
+        display: none;
+      }
+
+      .canvas-menu .close-canvas-menu {
+        display: block;
+      }
+
+      .light-navbar .navbar.navbar-static-top {
+        background-color: #ffffff;
+      }
+
+      #reena {
+        color: #fff;
+        background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+        background-size: 400% 400%;
+        -webkit-animation: Gradient 15s ease infinite;
+        -moz-animation: Gradient 15s ease infinite;
+        animation: Gradient 15s ease infinite;
+      }
+
+      @-webkit-keyframes Gradient {
+        0% {
+          background-position: 0% 50%
+        }
+
+        50% {
+          background-position: 100% 50%
+        }
+
+        100% {
+          background-position: 0% 50%
+        }
+      }
+
+      @-moz-keyframes Gradient {
+        0% {
+          background-position: 0% 50%
+        }
+
+        50% {
+          background-position: 100% 50%
+        }
+
+        100% {
+          background-position: 0% 50%
+        }
+      }
+
+      @keyframes Gradient {
+        0% {
+          background-position: 0% 50%
+        }
+
+        50% {
+          background-position: 100% 50%
+        }
+
+        100% {
+          background-position: 0% 50%
+        }
+      }
+
+      /* GLOBAL STYLES */
+      #body-type {
+        padding-top: 1em;
+        display: flex;
+        justify-content: left;
+      }
+
+      /* Badge */
+      .badge {
+        background-color: rgb(0, 139, 139);
+      }
+
+      .white p {
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <div class="section aboutme" data-anchor="aboutme" id="reena">
+      <br>
+      <div class="opaque-bg animated fadeInDown">
+        <h1 style="color:white">REENA DALANGIN</h1>
+        <p>
+          <span id="holder"></span>
+          <span class="blinking-cursor">|</span>
+        </p>
+        <p>
+        <div class="social-links">
+          <span>
+            <a href="https://www.linkedin.com/in/reena-dalangin" target="_blank">
+              <i class="fa fa-linkedin fa-2x"></i>
+            </a>
+          </span>
+          <span>
+            <a href="mailto:someone@example.com" target="_blank">
+              <i class="fa fa-envelope fa-2x"></i>
+            </a>
+          </span>
+          <span>
+            <a href="https://github.com/reena-dalangin" target="_blank">
+              <i class="fa fa-github fa-2x"></i>
+            </a>
+          </span>
+        </div>
+        <br>
+        </p>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row content">
+        <div class="col-sm-4">
+          <div class="white">
+            <h2>OBJECTIVE</h2>
+            <p>To work in a dynamic professional environment with a growing organization that provides opportunities to apply my skills and contribute to company’s operations </p>
+            <br>
+            <br>
+          </div>
+          <br>
+          <div class="white">
+            <h2>SKILLS AND TECHNOLOGIES</h2>
+            <!-- List group with custom content -->
+            <ol class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Programming</div>
+                  <span class="badge badge-pill badge-primary">Java</span>
+                  <span class="badge badge-pill badge-primary">Python</span>
+                  <span class="badge badge-pill badge-primary">JavaScript</span>
+                  <span class="badge badge-pill badge-primary">TypeScript</span>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Geographic Information System</div>
+                  <span class="badge badge-pill badge-primary">QGIS</span>
+                  <span class="badge badge-pill badge-primary">Google Maps</span>
+                  <span class="badge badge-pill badge-primary">OpenStreetMap</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Web Development</div>
+                  <span class="badge badge-pill badge-primary">HTML</span>
+                  <span class="badge badge-pill badge-primary">CSS</span>
+                  <span class="badge badge-pill badge-primary">PHP</span>
+                  <span class="badge badge-pill badge-primary">JavaScript</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Cloud Computing</div>
+                  <span class="badge badge-pill badge-primary">Amazon Web Services</span>
+                  <span class="badge badge-pill badge-primary">Google Cloud Platform</span>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Micro-controller</div>
+                  <span class="badge badge-pill badge-primary">Arduino</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Data Storage</div>
+                  <span class="badge badge-pill badge-primary">MySQL</span>
+                  <span class="badge badge-pill badge-primary">PostrgreSQL</span>
+                  <span class="badge badge-pill badge-primary">Firebase</span>
+                  <span class="badge badge-pill badge-primary">PostGIS</span>
+                  <span class="badge badge-pill badge-primary">AWS DynamoDB</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Version Control</div>
+                  <span class="badge badge-pill badge-primary">Git</span>
+                  <span class="badge badge-pill badge-primary">SVN</span>
+              </li>
+            </ol>
+            <!-- End with custom content -->
+            <br>
+            <br>
+          </div>
+          <br>
+          <div class="white">
+            <h2>CERTIFICATION</h2>
+            <h4>Amazon Web Services Siklab Pilipinas Cloud Computing Competency Examination</h4>
+            <h5>
+              <span class="glyphicon glyphicon-time"></span> June 5, 2018
+            </h5>
+            <p>SMX Convention Center, BGC Taguig City</p>
+            <hr>
+            <h4>IT Passport Certification Examination</h4>
+            <h5>
+              <span class="glyphicon glyphicon-time"></span> October 29, 2017
+            </h5>
+            <p>Philippine National IT Standards Foundation Inc. (PHILNITS)</p>
+            <br>
+          </div>
+          <br>
+          <div class="white">
+            <h2>SEMINAR AND TRAINING ATTENDED</h2>
+            <hr>
+            <h4>Facebook Hactober Fest</h4>
+            <p>BGC Taguig City <br> Facebook Philippines - Hackathon </p>
+            <h5>
+              <span class="glyphicon glyphicon-time"></span> October 2019
+            </h5>
+            <hr>
+            <h4>Javascript With Introduction To React</h4>
+            <p>Citynet Central, Mandaluyong City <br> Ground Gurus </p>
+            <h5>
+              <span class="glyphicon glyphicon-time"></span> February 10, 2019
+            </h5>
+            <hr>
+            <h4>AWS Siklab Pilipinas Cloud Computing Bootcamp</h4>
+            <p>SMX Convention Center, BGC Taguig City <br> Amazon Web Services Philippines </p>
+            <h5>
+              <span class="glyphicon glyphicon-time"></span> June 4 - 7, 2018
+            </h5>
+            <hr>
+            <h4>Global Communications Training</h4>
+            <p>Pacific Star Building, Makati City <br> Eperformax </p>
+            <h5>
+              <span class="glyphicon glyphicon-time"></span> May 27 - August 13, 2013
+            </h5>
+            <br>
+          </div>
+          <br>
+          <br>
+          <div class="white">
+            <h2> Hi, I’m Reena!</h2>
+            <p> A backend developer with 7+ years of experience building robust, scalable, and high-performance web applications. <br> I’m passionate about designing efficient backend systems, optimizing databases, and ensuring seamless API integrations. <br>Whether it’s architecting a scalable API, improving system performance, or automating workflows, I focus on delivering secure and reliable backend solutions. <br>
+              <br>
+            </p>
+            <a target="_blank" href="https://drive.google.com/file/d/1Q3_6IFJy2rABEK28wBDvrzIfiu-U5odD/view?usp=sharing" class="btn btn-primary btn-block">
+              <b>Let’s work together!</b>
+            </a>
+            <br>
+          </div>
+        </div>
+        <div class="col-sm-8 sidenav">
+          <!--  timeline here -->
+          <h2 class="m-t-sm m-b-lg text-center"> Career History </h2>
+          <div id="vertical-timeline" class="vertical-container light-timeline no-margins">
+            <div class="vertical-timeline-block">
+              <div class="vertical-timeline-icon yellow-bg text-timeline-icon">
+                <small></small>
+              </div>
+              <div class="vertical-timeline-content">
+                <h2>Software Engineer</h2>
+                <h5>Lista PH</h5>
+                <hr>
+                <ul>
+                  <li>Design and build APIs using NestJs enforcing best practices and coding standards</li>
+                  <li>Integrate with third-party APIs such as payment gateways and credit score providers</li>
+                  <li>Write and automate test cases for core functionalitie to ensure smooth communication and data exchange</li>
+                  <li>Implement and use of AI to analyze customer data to offer personalized financial overview on savings and expenses which is powered by ChatGPT</li>
+                  <li>Troubleshoot production issues and work with customer support team to ensure smooth operations and address technical challenges faced by users</li>
+                </ul>
+                <br>
+                <h5 class="text-right">
+                  <span class="glyphicon glyphicon-time"></span> February 2023 - present
+                </h5>
+              </div>
+            </div>
+            <div class="vertical-timeline-block">
+              <div class="vertical-timeline-icon navy-bg text-timeline-icon">
+                <small></small>
+              </div>
+              <div class="vertical-timeline-content">
+                <h2>Software Engineer</h2>
+                <h5>QUADX Inc.</h5>
+                <hr>
+                <ul>
+                  <li>Architect and implement scalable and high performance microservices using serverless framework.</li>
+                  <li>Design, develop and maintain testable and secure REST based microservices using NodeJS, PHP or Python</li>
+                  <li>Experience with Amazon Web Services / Google Cloud Platform and serverless computing.</li>
+                  <li>Familiarity in test-driven development (TDD)</li>
+                  <li>Integrate with third-party web services or APIs</li>
+                  <li>Collaborate with cross-discipline teams to meet project goals in an agile environment</li>
+                  <li>Document features, processes and integrations</li>
+                  <li>Advanced debugging and code analysis skills.</li>
+                </ul>
+                <br>
+                <h5 class="text-right">
+                  <span class="glyphicon glyphicon-time"></span> July 2018 - February 2023
+                </h5>
+              </div>
+            </div>
+            <div class="vertical-timeline-block">
+              <div class="vertical-timeline-icon blue-bg text-timeline-icon">
+                <small></small>
+              </div>
+              <div class="vertical-timeline-content">
+                <h2>Consultant Analyst</h2>
+                <h5>Asiagate Networks Inc.</h5>
+                <hr>
+                <ul>
+                  <li>Research, analyze and document existing systems to incorporate new requirements</li>
+                  <li>Prepare for the translation of a Human Resource Information System (HRIS) written in PHP with CodeIgniter framework to Laravel framework</li>
+                  <li>Develop and test new APIs for various projects including HRIS, DRM</li>
+                  <li>Optimize report generation using Jasper Reports in existing projects written in PHP using CodeIgniter framework</li>
+                  <li>Integrate with LockLizard for a Digital Rights Management (DRM) System</li>
+                </ul>
+                <br>
+                <h5 class="text-right">
+                  <span class="glyphicon glyphicon-time"></span> January 2022 - April 2022
+                </h5>
+              </div>
+            </div>
+            <div class="vertical-timeline-block">
+              <div class="vertical-timeline-icon yellow-bg">
+              </div>
+              <div class="vertical-timeline-content">
+                <h2>Freelance Developer</h2>
+                <h5></h5>
+                <hr>
+                <ul>
+                  <li>Develop prototypes using Arduino Uno</li>
+                  <li>Update website content and design (Wix, Wordpress)</li>
+                  <li>Develop, test and implement new system as per client request</li>
+                </ul>
+                <br>
+                <h5 class="text-right">
+                  <span class="glyphicon glyphicon-time"></span> 2018 - present
+                </h5>
+              </div>
+            </div>
+            <div class="vertical-timeline-block">
+              <div class="vertical-timeline-icon navy-bg text-timeline-icon">
+                <small></small>
+              </div>
+              <div class="vertical-timeline-content">
+                <h2>GIS Tutor</h2>
+                <h5>Freelance Mapping and Geospatial Tutor</h5>
+                <hr>
+                <ul>
+                  <li>Teach Geographic Information System (GIS) using QGIS software to non-technical professionals</li>
+                </ul>
+                <br>
+                <h5 class="text-right">
+                  <span class="glyphicon glyphicon-time"></span> 2018
+                </h5>
+              </div>
+            </div>
+            <div class="vertical-timeline-block">
+              <div class="vertical-timeline-icon blue-bg">
+              </div>
+              <div class="vertical-timeline-content">
+                <h2>Internship</h2>
+                <h5>Omnicor Industrial Estate and Realty Center Inc.</h5>
+                <hr>
+                <ul>
+                  <li>Create web application that computes lot data</li>
+                  <li>Create maps using GIS software like QGIS and AutoCAD</li>
+                  <li>Perform research to obtain and expand existing data sets about lot or parcels through Titles and Tax Declarations</li>
+                  <li>Compile geographic and demographic data from different sources</li>
+                  <li>Consult with external stakeholders to access censuses, fieldwork satellite and aerial imagery, and maps</li>
+                  <li>Build, manipulate, and update databases</li>
+                  <li>Present information to clients and stakeholders in verbal or written format</li>
+                </ul>
+                <br>
+                <h5 class="text-right">
+                  <span class="glyphicon glyphicon-time"></span> February 2018 - May 2018
+                </h5>
+              </div>
+            </div>
+            <div class="vertical-timeline-block">
+              <div class="vertical-timeline-icon yellow-bg text-timeline-icon">
+                <small></small>
+              </div>
+              <div class="vertical-timeline-content">
+                <h2>Capstone Project</h2>
+                <h5>Batangas CPDO- Zoning Division Geodatabase Creation and Model Development for Future Spatial Analysis</h5>
+                <hr>
+                <p></p>
+                <br>
+                <h5 class="text-right">
+                  <span class="glyphicon glyphicon-time"></span> 2017
+                </h5>
+              </div>
+            </div>
+            <div class="vertical-timeline-block">
+              <div class="vertical-timeline-icon navy-bg text-timeline-icon">
+                <small></small>
+              </div>
+              <div class="vertical-timeline-content">
+                <h2>IT Passport Certification Examination</h2>
+                <hr>
+                <p>Information Technology Passport (IP) Certification Exam is for assessing the capability of people in their knowledge of Information Technology and how IT can be used in carrying out their tasks in the workplace.</p>
+                <br>
+                <h5 class="text-right">
+                  <span class="glyphicon glyphicon-time"></span> 2017
+                </h5>
+              </div>
+            </div>
+            <div class="vertical-timeline-block">
+              <div class="vertical-timeline-icon blue-bg text-timeline-icon">
+                <small></small>
+              </div>
+              <div class="vertical-timeline-content">
+                <h2>Bachelor of Science in Information Technology</h2>
+                <h5>Major in Management Information Systems</h5>
+                <hr>
+                <p>Batangas State University - Main Campus II</p>
+                <ul>
+                  <li>Suggests top five location on where to locate future business</li>
+                  <li>Provides in-depth information about the Barangay without the hassle of surveying the land which most businessmen comply</li>
+                  <li>Possible requirements and forms are made downloadable through the website</li>
+                </ul>
+                <br>
+                <h5 class="text-right">
+                  <span class="glyphicon glyphicon-time"></span> 2015 - 2018
+                </h5>
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div>
+    <footer class="container-fluid text-center">
+      <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up lblue"></span>
+      </a>
+      <h3>Reena Perez Dalangin</h3>
+      <p>Developer | Freelancer | Consultant | Tutor</p>
+      <div class="social-links">
+        <a href="#" class="twitter">
+          <i class="bx bxl-twitter"></i>
+        </a>
+        <a href="#" class="facebook">
+          <i class="bx bxl-facebook"></i>
+        </a>
+        <a href="#" class="instagram">
+          <i class="bx bxl-instagram"></i>
+        </a>
+        <a href="#" class="google-plus">
+          <i class="bx bxl-skype"></i>
+        </a>
+        <a href="#" class="linkedin">
+          <i class="bx bxl-linkedin"></i>
+        </a>
+      </div>
+      <p>&copy; Copyright | All Rights Reserved</p>
+    </footer>
+    <script>
+      $(document).ready(function() {
+        // typing animation
+        (function($) {
+          $.fn.writeText = function(content) {
+            var contentArray = content.split(""),
+              current = 0,
+              elem = this;
+            setInterval(function() {
+              if (current < contentArray.length) {
+                elem.text(elem.text() + contentArray[current++]);
+              }
+            }, 80);
+          };
+        })(jQuery);
+        // input text for typing animation
+        $("#holder").writeText("DEVELOPER | FREELANCER | CONSULTANT ");
+        // initialize wow.js
+        new WOW().init();
+        // Push the body and the nav over by 285px over
+        var main = function() {
+          $(".fa-bars").click(function() {
+            $(".nav-screen").animate({
+              right: "0px"
+            }, 200);
+            $("body").animate({
+              right: "285px"
+            }, 200);
+          });
+          // Then push them back */
+          $(".fa-times").click(function() {
+            $(".nav-screen").animate({
+              right: "-285px"
+            }, 200);
+            $("body").animate({
+              right: "0px"
+            }, 200);
+          });
+          $(".nav-links a").click(function() {
+            $(".nav-screen").animate({
+              right: "-285px"
+            }, 500);
+            $("body").animate({
+              right: "0px"
+            }, 500);
+          });
+        };
+        $(document).ready(main);
+        // initiate full page scroll
+        $("#fullpage").fullpage({
+          scrollBar: true,
+          responsiveWidth: 400,
+          navigation: true,
+          navigationTooltips: ["home", "about", "portfolio", "contact", "connect"],
+          anchors: ["home", "about", "portfolio", "contact", "connect"],
+          menu: "#myMenu",
+          fitToSection: false,
+          afterLoad: function(anchorLink, index) {
+            var loadedSection = $(this);
+            //using index
+            if (index == 1) {
+              /* add opacity to arrow */
+              $(".fa-chevron-down").each(function() {
+                $(this).css("opacity", "1");
+              });
+              $(".header-links a").each(function() {
+                $(this).css("color", "white");
+              });
+              $(".header-links").css("background-color", "transparent");
+            } else if (index != 1) {
+              $(".header-links a").each(function() {
+                $(this).css("color", "black");
+              });
+              $(".header-links").css("background-color", "white");
+            }
+            //using index
+            if (index == 2) {
+              /* animate skill bars */
+              $(".skillbar").each(function() {
+                $(this).find(".skillbar-bar").animate({
+                  width: $(this).attr("data-percent")
+                }, 2500);
+              });
+            }
+          }
+        });
+        // move section down one
+        $(document).on("click", "#moveDown", function() {
+          $.fn.fullpage.moveSectionDown();
+        });
+        // fullpage.js link navigation
+        $(document).on("click", "#skills", function() {
+          $.fn.fullpage.moveTo(2);
+        });
+        $(document).on("click", "#projects", function() {
+          $.fn.fullpage.moveTo(3);
+        });
+        $(document).on("click", "#contact", function() {
+          $.fn.fullpage.moveTo(4);
+        });
+        // smooth scrolling
+        $(function() {
+          $("a[href*=#]:not([href=#])").click(function() {
+            if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+              if (target.length) {
+                $("html,body").animate({
+                  scrollTop: target.offset().top
+                }, 700);
+                return false;
+              }
+            }
+          });
+        });
+        //ajax form
+        $(function() {
+          // Get the form.
+          var form = $("#ajax-contact");
+          // Get the messages div.
+          var formMessages = $("#form-messages");
+          // Set up an event listener for the contact form.
+          $(form).submit(function(e) {
+            // Stop the browser from submitting the form.
+            e.preventDefault();
+            // Serialize the form data.
+            var formData = $(form).serialize();
+            // Submit the form using AJAX.
+            $.ajax({
+              type: "POST",
+              url: $(form).attr("action"),
+              data: formData
+            }).done(function(response) {
+              // Make sure that the formMessages div has the 'success' class.
+              $(formMessages).removeClass("error");
+              $(formMessages).addClass("success");
+              // Set the message text.
+              $(formMessages).text(response);
+              // Clear the form.
+              $("#name").val("");
+              $("#email").val("");
+              $("#message").val("");
+            }).fail(function(data) {
+              // Make sure that the formMessages div has the 'error' class.
+              $(formMessages).removeClass("success");
+              $(formMessages).addClass("error");
+              // Set the message text.
+              if (data.responseText !== "") {
+                $(formMessages).text(data.responseText);
+              } else {
+                $(formMessages).text("Oops! An error occured and your message could not be sent.");
+              }
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
