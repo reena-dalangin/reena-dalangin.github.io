@@ -1,281 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>reeDesigns | ReDesign the future of Web Development</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Reena Dalangin | Senior Software Engineer</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
   <style>
-  body {
-      font: 400 15px Lato, sans-serif;
-      line-height: 1.8;
-      color: #818181;
+  #reena {
+    color: #fff;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
   }
-  h2 {
-      font-size: 24px;
-      text-transform: uppercase;
-      color: #303030;
-      font-weight: 600;
-      margin-bottom: 30px;
-  }
-  h4 {
-      font-size: 19px;
-      line-height: 1.375em;
-      color: #303030;
-      font-weight: 400;
-      margin-bottom: 30px;
-  }  
-  .jumbotron {
-      background-color: transparent;
-      color: #fff;
-      padding: 100px 25px;
-      font-family: Montserrat, sans-serif;
-  }
-  .container-fluid {
-      padding: 60px 50px;
-  }
-  .bg-grey {
-      background-color: #f6f6f6;
-  }
-  .logo-small {
-      color: #f4511e;
-      font-size: 50px;
-  }
-  .logo {
-      color: #f4511e;
-      font-size: 200px;
-  }
-  .thumbnail {
-      padding: 0 0 15px 0;
-      border: none;
-      border-radius: 0;
-  }
-  .thumbnail img {
-      width: 100%;
-      height: 100%;
-      margin-bottom: 10px;
-  }
-  .carousel-control.right, .carousel-control.left {
-      background-image: none;
-      color: #f4511e;
-  }
-  .carousel-indicators li {
-      border-color: #f4511e;
-  }
-  .carousel-indicators li.active {
-      background-color: #f4511e;
-  }
-  .item h4 {
-      font-size: 19px;
-      line-height: 1.375em;
-      font-weight: 400;
-      font-style: italic;
-      margin: 70px 0;
-  }
-  .item span {
-      font-style: normal;
-  }
-  .panel {
-      border: 1px solid #f4511e; 
-      border-radius:0 !important;
-      transition: box-shadow 0.5s;
-  }
-  .panel:hover {
-      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-  }
-  .panel-footer .btn:hover {
-      border: 1px solid #f4511e;
-      background-color: #fff !important;
-      color: #f4511e;
-  }
-  .panel-heading {
-      color: #fff !important;
-      background-color: #f4511e !important;
-      padding: 25px;
-      border-bottom: 1px solid transparent;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-  }
-  .panel-footer {
-      background-color: white !important;
-  }
-  .panel-footer h3 {
-      font-size: 32px;
-  }
-  .panel-footer h4 {
-      color: #aaa;
-      font-size: 14px;
-  }
-  .panel-footer .btn {
-      margin: 15px 0;
-      background-color: #f4511e;
-      color: #fff;
-  }
-  .navbar {
-      margin-bottom: 0;
-      background-color: #34495e;
-      z-index: 9999;
-      border: 0;
-      font-size: 12px !important;
-      line-height: 1.42857143 !important;
-      letter-spacing: 4px;
-      border-radius: 0;
-      font-family: Montserrat, sans-serif;
-  }
-  .navbar li a, .navbar .navbar-brand {
-      color: #fff !important;
-  }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #2c3e50 !important;
-      background-color: #fff !important;
-  }
-  .navbar-default .navbar-toggle {
-      border-color: transparent;
-      color: #fff !important;
-  }
-  footer .glyphicon {
-      font-size: 20px;
-      margin-bottom: 20px;
-      color: #f4511e;
-  }
-  .slideanim {visibility:hidden;}
-  .slide {
-      animation-name: slide;
-      -webkit-animation-name: slide;
-      animation-duration: 1s;
-      -webkit-animation-duration: 1s;
-      visibility: visible;
-  }
-  @keyframes slide {
+  
+  @-webkit-keyframes Gradient {
     0% {
-      opacity: 0;
-      transform: translateY(70%);
-    } 
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
     100% {
-      opacity: 1;
-      transform: translateY(0%);
+      background-position: 0% 50%
     }
   }
-  @-webkit-keyframes slide {
+  
+  @-moz-keyframes Gradient {
     0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
-    } 
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
     100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
+      background-position: 0% 50%
     }
   }
-  @media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
+  
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%
     }
-    .btn-lg {
-        width: 100%;
-        margin-bottom: 35px;
+    50% {
+      background-position: 100% 50%
     }
-  }
-  @media screen and (max-width: 480px) {
-    .logo {
-        font-size: 150px;
+    100% {
+      background-position: 0% 50%
     }
   }
-  .bg-4 { 
-      background-color: #34495e;
-      color: #fff;
-  }
+    </style>
 
-body {
-	width: 100wh;
-	height: 90vh;
-	color: #fff;
-	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-	background-size: 400% 400%;
-	-webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite;
-}
 
-@-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
 
-@-moz-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-@keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-.navy {      
-	background-color: #34495e;}
-	
-.navy:hover {
-	background-color: #34495e; 
-	color:white;   
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
-	
-img {
-    width: 100%;
-    height: auto;
-}
-  </style>
+  <!-- Vendor CSS Files -->
+  <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet"> -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="#reena" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#experience" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Experience</span></a></li>
+        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Reena Section ======= -->
+  <section id="reena" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Reena Perez Dalangin</h1>
+      <p>I'm a <span class="typed" data-typed-items="Developer, Freelancer, Consultant"></span></p>
+      <div class="social-links">
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </section><!-- End Reena -->
+
+  <main id="main">
+    <!-- ======= Experience Section ======= -->
+    <section id="experience" class="resume">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Experience</h2>
+          <p>To work in a dynamic professional environment with a growing organization that provides opportunities to apply my skills and contribute to company’s operations</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="100">
+            <!-- List group with custom content -->
+            <ol class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Programming</div>
+                  <span class="badge bg-primary rounded-pill">Java</span>
+                  <span class="badge bg-primary rounded-pill">Python</span>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Geographic Information System</div>
+                  <span class="badge bg-primary rounded-pill">QGIS</span>
+                  <span class="badge bg-primary rounded-pill">Google Maps</span>
+                  <span class="badge bg-primary rounded-pill">OpenStreetMap</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Web Development</div>
+                  <span class="badge bg-primary rounded-pill">HTML</span>
+                  <span class="badge bg-primary rounded-pill">CSS</span>
+                  <span class="badge bg-primary rounded-pill">PHP</span>
+                  <span class="badge bg-primary rounded-pill">JavaScript</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Cloud Computing</div>
+                  <span class="badge bg-primary rounded-pill">Amazon Web Services</span>
+                  <span class="badge bg-primary rounded-pill">Google Cloud Platform</span>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Micro-controller</div>
+                  <span class="badge bg-primary rounded-pill">Arduino</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Data Storage</div>
+                  <span class="badge bg-primary rounded-pill">MySQL</span>
+                  <span class="badge bg-primary rounded-pill">PostrgreSQL</span>
+                  <span class="badge bg-primary rounded-pill">Firebase</span>
+                  <span class="badge bg-primary rounded-pill">AWS DynamoDB</span>
+              </li>
+            </ol><!-- End with custom content -->
+        </div>
 
 
+          <div class="col-lg-8">
+            <div class="resume-item">
+              <h4>Senior Software Engineer</h4>
+              <h5>July 2018 - present</h5>
+              <p><em>QuadX Inc.</em></p>
+              <ul>
+                <li>Architect and implement scalable and high performance  microservices using serverless framework.</li>
+                <li>Design, develop and maintain testable and secure REST based microservices using NodeJS, PHP or Python</li>
+                <li>Experience with Amazon Web Services / Google Cloud Platform and serverless computing.</li>
+                <li>Familiarity in test-driven development (TDD)</li>
+                <li>Integrate with third-party web services or APIs</li>
+                <li>Collaborate with cross-discipline teams to meet project goals in an agile environment</li>
+                <li>Document features, processes and integrations</li>
+                <li>Advanced debugging and code analysis skills.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Consultant Analyst</h4>
+              <h5>January 2022 - April 2022</h5>
+              <p><em>Asiagate Networks Inc.</em></p>
+              <ul>
+                <li>Research, analyze and document existing systems to incorporate new requirements</li>
+                <li>Prepare for the translation of a Human Resource Information System (HRIS) written in PHP with CodeIgniter framework to Laravel framework</li>
+                <li>Develop and test new APIs for various projects including HRIS, DRM</li>
+                <li>Optimize report generation using Jasper Reports in existing projects written in PHP using CodeIgniter framework</li>
+                <li>Integrate with LockLizard for a Digital Rights Management (DRM) System</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Freelance Developer</h4>
+              <h5>June 2018 - present</h5>
+              <ul>
+                <li>Develop prototypes using Arduino Uno</li>
+                <li>Update website content and design (Wix, Wordpress)</li>
+                <li>Develop, test and implement new system as per client request</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>GIS Tutor</h4>
+              <h5>2018</h5>
+              <ul>
+                <li>Teach Geographic Information System using QGIS software to non-technical professionals</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>On-the-Job Trainee</h4>
+              <h5>February 2018 - May 2018</h5>
+              <p><em>Omnicor Industrial Estate and Realty Center Inc.</em></p>
+              <ul>
+                <li>Create web application that computes lot data</li>
+                <li>Create maps using GIS software like QGIS and AutoCAD</li>
+                <li>Perform research to obtain and expand existing data sets about lot or parcels through Titles and Tax Declarations</li>
+                <li>Compile geographic and demographic data from different sources</li>
+                <li>Consult with external stakeholders to access censuses, fieldwork satellite and aerial imagery, and maps</li>
+                <li>Build, manipulate, and update databases</li>
+                <li>Present information to clients and stakeholders in verbal or written format</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>BS Information Technology Major in Management Information Systems</h4>
+              <h5>2015 - 2018</h5>
+              <p><em>Batangas State University Main Campus II</em></p>
+            </div>
+          </div>
+        </div>
 
-<div class="jumbotron text-center">
+      </div>
+    </section><!-- End Resume Section -->
 
-<div class="col-sm-4">
-	<img src="Reedesigns logo.png" alt="ReeDesigns">
-</div>
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
 
-<br><br>
-  <h1>Hello World!</h1> 
-  <p>ReInvent the power of UI. ReDesign the future of Web Development.</p> 
-          <button class="btn btn-lg navy">Services</button>          
-		  <button class="btn btn-lg navy">Portfolio</button>
-		  <button class="btn btn-lg navy">About</button>
-		  <button class="btn btn-lg navy">Contact</button>
-</div>
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
 
+        <div class="row">
 
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                </svg>
+                <i class="bx bx-file"></i>
+              </div>
+              <h4><a href="">Developer</a></h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
 
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-orange ">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
+                </svg>
+                <i class="bx bx-bar-chart-square"></i>
+              </div>
+              <h4><a href="">Consultant</a></h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div>
 
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-teal">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
+                </svg>
+                <i class="bx bx-book"></i>
+              </div>
+              <h4><a href="">Tutor</a></h4>
+              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <section class="section profile">
+            <div class="row">
+              <div class="col-xl-6">
+      
+                <div class="card">
+                  <div class="card-body pt-3">
+
+                    <div class="tab-content pt-2">
+      
+                      <div class="tab-pane fade show active profile-overview" id="profile-overview">
+                        <h5 class="card-title">Profile Details</h5>
+                        <br>
+      
+                        <div class="row">
+                          <div class="col-lg-3 col-md-4 label ">Full Name</div>
+                          <div class="col-lg-9 col-md-8">Reena Perez Dalangin</div>
+                        </div>
+                        <hr>
+      
+                        <div class="row">
+                          <div class="col-lg-3 col-md-4 label">Company</div>
+                          <div class="col-lg-9 col-md-8">QuadX Inc.</div>
+                        </div>
+                        <hr>
+      
+                        <div class="row">
+                          <div class="col-lg-3 col-md-4 label">Job</div>
+                          <div class="col-lg-9 col-md-8">Senior Back-end Developer</div>
+                        </div>
+                        <hr>
+      
+                        <div class="row">
+                          <div class="col-lg-3 col-md-4 label">Country</div>
+                          <div class="col-lg-9 col-md-8">Philippines</div>
+                        </div>
+                        <hr>
+      
+                        <div class="row">
+                          <div class="col-lg-3 col-md-4 label">Address</div>
+                          <div class="col-lg-9 col-md-8">Batangas City, Batangas</div>
+                        </div>
+                        <hr>
+      
+                        <div class="row">
+                          <div class="col-lg-3 col-md-4 label">Phone</div>
+                          <div class="col-lg-9 col-md-8">0917-381-4163 | 0946-511-2704</div>
+                        </div>
+                        <hr>
+      
+                        <div class="row">
+                          <div class="col-lg-3 col-md-4 label">Email</div>
+                          <div class="col-lg-9 col-md-8">reena.dalangin@gmail.com</div>
+                        </div>
+      
+                      </div>
+          
+                    </div><!-- End Bordered Tabs -->
+      
+                  </div>
+                </div>
+      
+              </div>
+
+              <div class="col-xl-6">
+      
+                <div class="card">
+                  <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
+                    <!-- <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle"> -->
+                    <h2>Reena Dalangin</h2>
+                    <h3>Developer</h3>
+                    <div class="social-links mt-2">
+                      <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+          </section>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Reena Perez Dalangin</h3>
+      <p>Developer | Freelancer | Consultant | Tutor</p>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright | All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
